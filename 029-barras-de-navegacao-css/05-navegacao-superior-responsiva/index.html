@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegação superior responsiva</title>
+    <style>
+        ul.navegacao {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        ul.navegacao li {
+            float: left;
+        }
+
+        ul.navegacao li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        ul.navegacao li a.ativo {
+            background-color: #04aa6d;
+        }
+
+        ul.navegacao li.right {
+            float: right;
+        }
+
+        ul.navegacao li a:hover:not(.ativo) {
+            background-color: #111;
+        }
+
+        @media screen and (max-width: 600px) {
+            ul.navegacao li.right,
+            ul.navegacao li {
+                float: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <ul class="navegacao superior">
+        <li>
+            <a class="ativo" href="#">Home</a>
+        </li>
+
+        <li>
+            <a href="#">Notícias</a>
+        </li>
+
+        <li>
+            <a href="#">Contato</a>
+        </li>
+
+        <li class="right">
+            <a href="#">Sobre</a>
+        </li>
+    </ul>
+
+    <div>
+        <h1>Exemplo de Topnav Responsivo</h1>
+
+        <p>Este exemplo usa consultas de mídia para empilhar o topnav verticalmente quando o tamanho da tela é 600px ou menos</p>
+
+        <h3>Redimensione a janela do navegador para ver o efeito.</h3>
+    </div>
+</body>
+</html>
