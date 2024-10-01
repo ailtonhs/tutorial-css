@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordas CSS</title>
+    <style>
+        p.one {
+            border-style: solid;
+            border-color: blue;
+        }
+
+        p.two {
+            border-style: solid;
+            border-color: red blue;
+        }
+
+        p.three {
+            border-style: solid;
+            border-color: blue red green;
+        }
+
+        p.four {
+            border-style: solid;
+            border-color: red green blue yellow;
+        }
+    </style>
+</head>
+<body>
+    <p class="one">Borda de uma cor!</p>
+
+    <p class="two">Borda bicolor!</p>
+
+    <p class="three">Borda tricolor!</p>
+
+    <p class="four">Borda de quatro cores!</p>
+
+    <p><b>Nota:</b> A propriedade "border-color" não funciona se for usada sozinha. Use a propriedade "border-style" para definir as bordas primeiro.</p>
+</body>
+</html>
