@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        div.conteiner {
+            background-color: lightgray;
+            width: 400px;
+            height: 250px;
+            display: flex;
+        }
+
+        div.item {
+            background-color: cornflowerblue;
+            width: 60px;
+            margin: 10px;
+            min-height: 100px;
+        }
+
+        div.one {
+            align-self: flex-start;
+        }
+
+        div.two {
+            align-self: flex-end;
+        }
+
+        div.three {
+            align-self: center;
+        }
+
+        div.four {
+            align-self: baseline;
+        }
+
+        div.five {
+            align-self: stretch;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item one">flex-star</div>
+        <div class="item two">flex-end</div>
+        <div class="item three">center</div>
+        <div class="item four">baseline</div>
+        <div class="item five">stretch</div>
+    </div>
+</body>
+</html>
