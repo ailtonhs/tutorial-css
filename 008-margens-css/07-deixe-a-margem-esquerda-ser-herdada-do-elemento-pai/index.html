@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margens CSS</title>
+    <style>
+        div {
+            border: 1px solid red;
+            margin-left: 100px;
+            width: 300px;
+        }
+
+        div > p {
+            margin-left: inherit;
+        }
+    </style>
+</head>
+<body>
+    <h2>Uso do valor herdado</h2>
+
+    <p>Deixe a margem esquerda ser herdada do elemento pai:</p>
+
+    <div>
+        <p>Este parágrafo tem uma margem esquerda herdada(do elemento div).</p>
+    </div>
+</body>
+</html>
