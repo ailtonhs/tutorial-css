@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding CSS</title>
+    <style>
+        div.ex1 {
+            background-color: yellow;
+            width: 300px;
+        }
+
+        div.ex2 {
+            background-color: lightblue;
+            width: 300px;
+            padding: 50px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <h2>Padding e largura do elemento - com dimensionamento de caixa</h2>
+
+    <div class="ex1">
+        Esta div tem 300px de largura
+    </div> <br>
+
+    <div class="ex2">
+        A largura desta div permanece em 300px, apesar dos 50px de padding total à esquerda e à direita, devido à propriedade box-sizing: border-box.
+    </div>
+</body>
+</html>
