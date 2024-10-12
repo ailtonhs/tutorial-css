@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links CSS</title>
+    <style>
+        a:link {
+            background-color: yellow;
+        }
+
+        a:visited {
+            background-color: gray;
+        }
+
+        a:hover {
+            background-color: lightgreen;
+        }
+
+        a:active {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <h2>Estilizando um link com propriedade background-color</h2>
+
+    <p><b><a href="#">Este é um link</a></b></p>
+
+    <p><strong>Observação:</strong> a:hover DEVE vir depois de a:link e a:visited na definição CSS para ser eficaz.</p>
+
+    <p><strong>Observação:</strong> a:active DEVE vir depois de a:hover na definição CSS para ser eficaz.</p>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links CSS</title>
+    <style>
+        a:link {
+            color: red;
+        }
+
+        a:visited {
+            color: green;
+        }
+
+        a:hover {
+            color: pink;
+        }
+
+        a:active {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estilizando um link dependendo do estado</h1>
+    <p><b><a href="#" target="_blank">Este é um link</a></b></p>
+
+    <p><strong>Observação:</strong> a:hover DEVE vir depois de a:link e a:visited na definição CSS para ser eficaz.</p>
+
+    <p><strong>Observação:</strong> a:active DEVE vir depois de a:hover na definição CSS para ser eficaz.</p>
+</body>
+</html>
